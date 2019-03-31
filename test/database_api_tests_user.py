@@ -147,6 +147,7 @@ class UserDbApiTestCase(unittest.TestCase):
         # Check that the messages has been really modified through a get
         resp2 = self.connection.get_user(nickname)
         self.assertDictContainsSubset(NEW_USER, resp2)
+
         self.assertDictContainsSubset(NEW_USER, resp2)
 
     def test_append_existing_user(self):
